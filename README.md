@@ -4,7 +4,7 @@
 ### Пример использования
 ```go
 // создаем сущьность для реакции на событие
-subscriber := nc.NewSubscriber(func() {
+subscriber := nc.NewSubscriber(func(i interface{}) {
 	print("Событие произошло")
 })
 
